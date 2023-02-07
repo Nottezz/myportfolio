@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Roboto+Mono:wght@600&family=Rubik:wght@300&family=Sofia+Sans&display=swap');
+
+
+body {
+    background: rgb(255, 255, 255);
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, #0A9396 3%, #94D2BD 38%, #E9D8A6 68%, #005F73 98%);
+    animation: gradient 20s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@media (max-width: 750px) {
+    .head {
+        font-size: 1.5rem;
+        padding: 10px;
+        text-align: center;
+    }
+    .container {
+        font-size: 1.5rem;
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif; ;
+    font-size: 49px;
+    letter-spacing: 2px;  
+    text-shadow: 1px 5px 12px #001219; 
+}
+
+h2 {
+    padding-top: 20px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 5px 12px #001219; 
+}
+.img {
+    margin-top: 20px;
+    border-radius: 10%;
+    box-shadow: 10px 1px 30px #001219;
+}
+
+.head {
+    background: #005F73;
+    border-radius: 2%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: 1700px;
+    box-shadow: 5px 1px 30px #001219;
+}
+
+.des {
+    font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    text-shadow: 1px 5px 12px #001219; 
+    font-size: 30px;
+    letter-spacing: 1px;  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.link {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.TG {
+    padding-right: 10px;
+}
+
+.GH {
+    padding-right: 10px;
+}
+
+.LD {
+    padding-right: 10px;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    background: #005F73;
+    border-radius: 2%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 1px 30px #001219;
+    max-width: 1700px;
+}
+
+.qa {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.text_qa   {
+    background: #0A9396;
+    color: white;
+    display: inline-flex;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 3px 10px 12px #001219; 
+    margin-bottom: 60px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all .3s;
+} 
+
+a {
+    text-decoration: none;
+    }
+
+a:visited {
+    color: white;
+}
+
+.text_qa:hover {
+    background: #001219;
+    /* font-size: 25px; */
+    border-radius: 20px;
+    cursor: default; 
+}
+
+
+
+.project {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_pr {
+    background: #0A9396;
+    display: inline-flex;
+    color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 3px 10px 12px #001219; 
+    margin-right: 25px;
+    margin-bottom: 60px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    transition: all .3s;
+    }
+
+
+.text_pr:hover {
+    background: #001219;
+    font-size: 25px;
+    border-radius: 30px; 
+    cursor: pointer;
+    
+}
+
+/* .text_python {
+    background: wheat;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px black;
+    margin-bottom: 10px;
+    margin-right: 150px; 
+    margin-left: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+} */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 10em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+/* https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226 */
